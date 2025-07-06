@@ -37,12 +37,14 @@ function QuoteBox() {
   return (
     <div className="quote-box">
       {loading ? (
-        <div className="loading-spinner"></div>
+        <div className="quote-content">
+          <div className="loading-spinner"></div>
+        </div>
       ) : (
-        <>
+        <div className="quote-content">
           <p className="quote-text">“{quote.text}”</p>
           <p className="quote-author">— {quote.author}</p>
-        </>
+        </div>
       )}
 
       <div className="buttons">
