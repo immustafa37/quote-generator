@@ -37,11 +37,25 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.loading {
+  font-size: 1.2rem;
+  color: #888;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
 .buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
+
 button {
   padding: 0.7rem 1.2rem;
   border: none;
@@ -51,13 +65,6 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
 
 button:hover {
